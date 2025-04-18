@@ -1,0 +1,32 @@
+{
+  "name": "arbitrage-finder-bot",
+  "version": "1.0.0",
+  "description": "A bot to find arbitrage opportunities across DEXs on EVM chains",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:high-volume": "node test-real-data.js high-volume",
+    "test:arbitrum": "node test-real-data.js arbitrum",
+    "test:polygon": "node test-real-data.js polygon",
+    "test:top-pairs": "node test-real-data.js top-pairs",
+    "mock": "MOCK_ENABLED=true node index.js"
+  },
+  "keywords": [
+    "crypto",
+    "arbitrage",
+    "defi",
+    "blockchain",
+    "ethereum"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ethers": "^5.7.2",
+    "web3": "^1.9.0",
+    "axios": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "winston": "^3.8.2",
+    "node-schedule": "^2.1.1"
+  }
+} 
